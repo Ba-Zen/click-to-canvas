@@ -20,7 +20,7 @@ export default function Home() {
       <div className={`${theme}`}>
         <div>{preview ? preview : null}</div>
         <div className="overflow-hidden absolute top-0 left-0">
-          <div className="grid grid-cols-1 gap-y-6 px-4 pb-20 pt-10 md:px-10">
+          <div className="grid grid-cols-1 gap-y-6 px-4 pt-10 md:px-10">
             {CANVAS_LIST.map((canvas, i) => {
               return (
                 <Controls
