@@ -19,12 +19,12 @@ const Controls: React.FC<ControlProps> = ({
     const code = ReactDOMServer.renderToString(children);
 
     navigator.clipboard.writeText(code);
-    toast.success('Copied');
+    toast.success('Copied to the clipboard');
   };
 
   return (
     <>
-      <div className="relative min-h-[60px] w-40 overflow-hidden rounded-lg ring-1 ring-zinc-900/10">
+      <div className="relative aspect-video overflow-hidden rounded-lg ring-1 ring-zinc-900/10">
         <div className="absolute left-4 top-4 z-10 cursor-pointer">
           <div className="flex flex-row gap-4">
             <div
